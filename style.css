@@ -1,0 +1,87 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background gradient and font style for the body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f06, #48f);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style the main container */
+#countdown {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+#countdown:hover {
+    transform: scale(1.05);
+}
+
+/* Style the heading */
+#countdown h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #444;
+}
+
+/* Style the selection section */
+#selection {
+    margin-bottom: 20px;
+}
+
+/* Style the date input */
+#selection input[type="date"] {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    width: calc(100% - 24px);
+    margin-bottom: 15px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+#selection input[type="date"]:focus {
+    border-color: #48f;
+}
+
+/* Style the submit button */
+#selection button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #48f;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#selection button:hover {
+    background-color: #3450a1;
+    transform: translateY(-2px);
+}
+
+/* Style the result section */
+.result {
+    margin-top: 20px;
+}
+
+#resultText {
+    font-size: 1.2em;
+    color: #333;
+}
